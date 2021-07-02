@@ -25,11 +25,13 @@
 
 
 
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    let banner = document.getElementById("banner");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        banner.className.add("rm");
+    } else {
+        x.className = "topnav";
+    }
+}

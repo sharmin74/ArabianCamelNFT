@@ -19,12 +19,22 @@ body {
     height: 700px;
 }
 
-
-/* 
 .space {
     background-color: black;
     height: 10rem;
-} */
+}
+
+#carousel img {
+    height: 30rem;
+}
+
+#carousel-data {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    right: 10px;
+    bottom: 0;
+}
 
 
 /* NAV NEW STARTS */
@@ -106,7 +116,7 @@ body {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .topnav a,
     .dropdown .dropbtn {
         display: none;
@@ -123,10 +133,11 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .topnav.responsive {
-        position: relative;
+        position: absolute;
         z-index: 100;
+        height: 100vh;
     }
     .topnav.responsive .icon {
         position: absolute;
@@ -164,7 +175,20 @@ body {
     width: 100%;
 }
 
-.arabian-camel {
+
+/* .arabian-camel {
+    background-image: url('./images/p1.png');
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+.antara-camel {
     background-image: url('./images/p1.png');
     width: 100%;
     height: 500px;
@@ -187,9 +211,32 @@ body {
     letter-spacing: 10px;
 }
 
+.antara-camel h1 {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 60px;
+    width: 30%;
+    line-height: 3.5rem;
+    letter-spacing: 10px;
+}
+
+.antara-camel hr {
+    margin: 10px 0 20px 0;
+    width: 80%;
+}
+
 .arabian-camel hr {
     margin: 10px 0 20px 0;
     width: 80%;
+}
+
+.antara-camel h1 p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 0;
+    letter-spacing: 2px;
 }
 
 .arabian-camel h1 p {
@@ -236,7 +283,7 @@ body {
 .home-data {
     color: white;
     text-align: center;
-    padding: 20px 40px;
+    padding: 0px 40px 20px;
     width: 70%;
     margin: auto;
 }
@@ -574,6 +621,36 @@ span {
     margin: 0;
 }
 
+.buy-a-camel-parallex {
+    background-image: url('./images/5.png');
+    width: 100%;
+    height: 500px;
+    color: black;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.buy-a-camel-parallex h1 {
+    position: relative;
+    top: 45%;
+    left: 10%;
+    font-size: 60px;
+    width: 30%;
+    letter-spacing: 10px;
+    margin: 0;
+    line-height: 3rem;
+}
+
+.buy-a-camel-parallex p {
+    font-size: 25px;
+    line-height: 0;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
 .aboutsubtitle {
     color: white;
     width: 50%;
@@ -622,6 +699,14 @@ span {
     color: white;
 }
 
+.s-img {
+    height: 100px;
+}
+
+.h-img {
+    height: 300px;
+}
+
 
 /* MEDIA QUERY FOR MOBILE  */
 
@@ -630,7 +715,7 @@ span {
         position: unset;
     }
     .banner {
-        position: unset;
+        background-color: black;
     }
     .roadmap {
         padding: 20px;
@@ -680,13 +765,32 @@ span {
         color: white;
         padding: 50px;
     }
+    .s-img {
+        height: 50px;
+        text-align: center;
+    }
+    .ss-img {
+        height: 35px;
+    }
+    .h-img {
+        height: 200px;
+    }
+    #carousel img {
+        height: 18rem;
+    }
 }
 
 @media all and (max-width: 500px) {
     .arabian-camel h1 {
         font-size: 40px;
         line-height: 2rem;
-        top: 40%;
+        top: 10%;
+    }
+    .banner {
+        margin-bottom: 30px;
+    }
+    .home-data h1 {
+        margin-top: 0;
     }
     .who-are-we h1 {
         font-size: 40px;
@@ -759,6 +863,18 @@ span {
     .ceo-parallex p {
         font-size: 15px;
     }
+    .buy-a-camel-parallex h1 {
+        top: 45%;
+        left: 10%;
+        font-size: 30px;
+        width: 30%;
+        letter-spacing: 5px;
+        margin: 0;
+        line-height: 1.5rem;
+    }
+    .buy-a-camel-parallex p {
+        font-size: 15px;
+    }
     .recru-parallex h1 {
         top: 45%;
         left: 10%;
@@ -790,5 +906,30 @@ span {
         font-size: 40px;
         line-height: 2rem;
         top: 40%;
+    }
+    /* CAROUSEL  */
+    #carousel img {
+        height: 12rem;
+    }
+    #carousel-data {
+        position: absolute;
+        color: white;
+        font-size: 10px;
+        right: 10px;
+        bottom: 0;
+    }
+    .space {
+        background-color: black;
+        height: 2rem;
+    }
+    .antara-camel h1 {
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-size: 40px;
+        width: 30%;
+        line-height: 2rem;
+        letter-spacing: 10px;
     }
 }
